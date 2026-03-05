@@ -22,7 +22,7 @@ import {
 import { toast } from "sonner";
 import { usePDFs } from "../context/PDFContext";
 
-export default function CandidatePanel() {
+export function CandidatePanel() {
   const { pushedPDFs } = usePDFs();
   const [isLocked, setIsLocked] = useState(false);
   const [timeLeft, setTimeLeft] = useState(3600);
